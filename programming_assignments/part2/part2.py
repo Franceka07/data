@@ -87,8 +87,10 @@ from client_csv import *
         2) Use the set_row() method of your BoolEvalSimple class to 
            make the dictionary available to the bool_solver() method.
 
-        Note: Do not modify the dictionary, for this assignment all information is 
+     Note(s): Do not modify the dictionary, for this assignment all information is 
               already present in the dictionary.
+              Also, make sure you are using the latest questions.csv from
+              https://github.com/bfilin/data/blob/main/programming_assignments/part0/questions.csv
  
 
 '''
