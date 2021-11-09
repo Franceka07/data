@@ -13,9 +13,9 @@ from client_csv import *
 
     For example:
      For the example dictionary below:
-     {'qid': 39, 
+     {'qid': 47, 
       'category': 2, 
-       'level': 2, 
+       'level': 1, 
        'problem': 'C and (A or B)', 
        'description': 'A=0,B=1,C=1', 
        'todo': 'evaluate_bool'}
