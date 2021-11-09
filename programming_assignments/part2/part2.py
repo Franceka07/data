@@ -85,7 +85,7 @@ from client_csv import *
            programming  assignment zero (0), use category 2 and level 1
            or a specific qid. 
         2) Use the set_row() method of your BoolEvalSimple class to 
-           make the dictionary available to the bool_solver() method.
+           make the dictionary available to the bool_eval() method.
 
      Note(s): Do not modify the dictionary, for this assignment all information is 
               already present in the dictionary.
