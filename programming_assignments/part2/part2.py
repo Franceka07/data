@@ -72,7 +72,7 @@ from client_csv import *
               https://www.pythonpool.com/python-string-to-variable-name
 
  
-      * Finally, you can use the test cases below to check your work. Think about 
+      * Finally, you can use the test cases below to check your work. You can think about 
         additional test cases, but keep in mind that for simplicity we are using the 
         standard Python logical operators: not, and, or.
 
