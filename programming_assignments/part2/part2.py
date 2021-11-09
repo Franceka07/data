@@ -63,9 +63,6 @@ from client_csv import *
         * Inspects the dictionary under self.row and evaluates the boolean expression. 
           The correct result of the evaluation should be returned by the bool_eval() 
           method as a string consisting of either '0' or '1'.
-
-        * You can use any approach when evaluating the boolean expression as long
-          as your code returns the correct truth value as string.
         
         * Useful hints to consider:    
             * For the value that is associated with the 'problem' key of the dictionary:
