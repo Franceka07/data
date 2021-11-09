@@ -61,16 +61,17 @@ from client_csv import *
          
       * The bool_eval() method:
         * Inspects the dictionary under self.row and evaluates the boolean expression. 
-          The final result of the evaluation should be returned as a string.
+          The correct result of the evaluation should be returned by the bool_eval() 
+          method as a string consisting of either '0' or '1'.
 
-        * You an use any approach when evaluating the boolean expression as long
+        * You can use any approach when evaluating the boolean expression as long
           as your code returns the correct truth value as string.
         
         * Useful hints to consider:    
             * For the value that is associated with the 'problem' key of the dictionary:
               https://realpython.com/python-eval-function/
 
-            * For the value that is associated with the 'description' of the dictionary:
+            * For the value that is associated with the 'description' key of the dictionary:
               https://www.pythonpool.com/python-string-to-variable-name
 
  
@@ -82,12 +83,15 @@ from client_csv import *
 
     *** prep-work***
     In order to obtain the boolean expression you will have to do the following
-    outside of your class definition:
+    outside of your class definition (as shown in the example below):
         1) Obtain the dictionary by using the get() method from the 
-           programming  assignment zero (0), use category 2 and level 1. 
+           programming  assignment zero (0), use category 2 and level 1
+           or a specific qid. 
         2) Use the set_row() method of your BoolEvalSimple class to 
-           make the dictionary available to the bool_solver method.
-        3) Do not modify the dictionary.
+           make the dictionary available to the bool_solver() method.
+
+        Note: Do not modify the dictionary, for this assignment all information is 
+              already present in the dictionary.
  
 
 '''
