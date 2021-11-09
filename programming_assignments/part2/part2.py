@@ -104,7 +104,7 @@ question = Questions(location = '../part0')
 
 
 # 
-td = question.get(qid = 34) # 34,2,1,A,"A=1",evaluate_bool
+td = question.get(qid = 42) # 42,2,1,A,"A=1",evaluate_bool
 bool_evaluator.set_row(td)
 correct_answer = '1'
 result = bool_evaluator.bool_eval()
@@ -112,7 +112,7 @@ print_result(td,result)
 assert(result == correct_answer), 'failed on ' + str(td['qid']) # indicate that it failed on specific qid
 
 # 
-td = question.get(qid = 35) # 35,2,1,A or B,"A=1,B=0",evaluate_bool
+td = question.get(qid = 43) # 43,2,1,A or B,"A=1,B=0",evaluate_bool
 bool_evaluator.set_row(td)
 correct_answer = '1'
 result = bool_evaluator.bool_eval()
@@ -120,7 +120,7 @@ print_result(td,result)
 assert(result == correct_answer), 'failed on ' + str(td['qid']) # indicate that it failed on specific qid
 
 # 
-td = question.get(qid = 36) # 36,2,1,A and B,"A=1,B=0",evaluate_bool
+td = question.get(qid = 44) # 44,2,1,A and B,"A=1,B=0",evaluate_bool
 bool_evaluator.set_row(td)
 correct_answer = '0'
 result = bool_evaluator.bool_eval()
@@ -128,7 +128,7 @@ print_result(td,result)
 assert(result == correct_answer), 'failed on ' + str(td['qid']) # indicate that it failed on specific qid
 
 # 
-td = question.get(qid = 37) # 37,2,1,not(A or B),"A=0,B=1",evaluate_bool
+td = question.get(qid = 45) # 45,2,1,not(A or B),"A=0,B=1",evaluate_bool
 bool_evaluator.set_row(td)
 correct_answer = '0'
 result = bool_evaluator.bool_eval()
@@ -137,7 +137,7 @@ assert(result == correct_answer), 'failed on ' + str(td['qid']) # indicate that 
 
 
 # 
-td = question.get(qid = 38) # 38,2,1,w or x and y or (not z),"w=0,x=1,y=0,z=0",evaluate_bool
+td = question.get(qid = 46) # 46,2,1,w or x and y or (not z),"w=0,x=1,y=0,z=0",evaluate_bool
 bool_evaluator.set_row(td)
 correct_answer = '1'
 result = bool_evaluator.bool_eval()
@@ -146,21 +146,29 @@ assert(result == correct_answer), 'failed on ' + str(td['qid']) # indicate that 
 
 
 # 
-td = question.get(qid = 39) # 39,2,1,C and (A or B),"A=0,B=1,C=1",evaluate_bool
+td = question.get(qid = 47) # 47,2,1,C and (A or B),"A=0,B=1,C=1",evaluate_bool
 bool_evaluator.set_row(td)
 correct_answer = '1'
 result = bool_evaluator.bool_eval()
 print_result(td,result)
 assert(result == correct_answer), 'failed on ' + str(td['qid']) # indicate that it failed on specific qid
-
 
 # 
-td = question.get(qid = 42) # 19,1,1,1110,bin,
+td = question.get(qid = 48) # 48,2,1,(A or B or C or D),"A=0,B=0,C=0,D=0",evaluate_bool
+bool_evaluator.set_row(td)
+correct_answer = '0'
+result = bool_evaluator.bool_eval()
+print_result(td,result)
+assert(result == correct_answer), 'failed on ' + str(td['qid']) # indicate that it failed on specific qid
+
+# 
+td = question.get(qid = 49) # 49,2,1,(A or B or C or D),"A=0,B=0,C=1,D=0",evaluate_bool
 bool_evaluator.set_row(td)
 correct_answer = '1'
 result = bool_evaluator.bool_eval()
 print_result(td,result)
 assert(result == correct_answer), 'failed on ' + str(td['qid']) # indicate that it failed on specific qid
+
 
 
 
