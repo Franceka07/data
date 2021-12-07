@@ -23,7 +23,8 @@ class Ui:
 
     # use the counter class
     self.counter = Counter(self.window, seconds = seconds)
- 
+
+    self.problem = turtle.Turtle()
 
     # demo button control
     if button_ctl == True:
@@ -48,7 +49,7 @@ class Ui:
 
    
 
-ui = Ui(button_ctl = True) # ( button_ctl = True, seconds = 9, debug = False):
+ui = Ui(button_ctl = True, seconds = 20) # ( button_ctl = True, seconds = 9, debug = False):
 
 
 

@@ -26,7 +26,8 @@ class Ui:
       self.btn.pack(padx=10, pady=15, side=tk.LEFT)
       self.btn.config(bg='lightblue')
 
-      self.btn2 = tk.Button(text='clear', command=self.clear, state = 'disabled') 
+      self.btn2 = tk.Button(text='clear', command=self.clear)
+      self.btn2.config(state = 'disabled') 
       self.btn2.pack(padx=10, pady=15, side=tk.LEFT)
       print('state',self.btn2['state'])
 
